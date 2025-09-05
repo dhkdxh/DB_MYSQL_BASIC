@@ -14,11 +14,11 @@ public class ConnectionDBUtilTest {
         try {
             Connection con = DBUtil.getConnection();  //도로연결
 
-               Statement stmt = con.createStatement();   //자동차
-//            int result = stmt.executeUpdate("INSERT INTO person(id,name) values(1000000,'홍길동11')");
-//            if (result == 1) {
-//                System.out.println("Insert successful!");
-//            }
+            Statement stmt = con.createStatement();   //자동차
+            int result = stmt.executeUpdate("INSERT INTO person(id,name) values(1000000,'홍길동11')");
+            if (result == 1) {
+                System.out.println("Insert successful!");
+            }
 
 
             String selectSql = "select id, name from person";
