@@ -118,6 +118,22 @@ public class MemberDAO {
     public void selectOne(){
         conn = DBUtil.getConnection();
         String sql = "{CALL SP_MEMBER_CHECK(?)}";
+
+        try(CallableStatement cs = conn.prepareCall(sql)){
+            cs.setString(1, "apple");
+
+            try(ResultSet rs = cs.executeQuery()) {
+
+            }
+            conn.setAutoCommit(false);
+
+            if(rs.next()){
+
+            }
+
+        }catch(SQLException e){
+
+        }
     }
 }
 
