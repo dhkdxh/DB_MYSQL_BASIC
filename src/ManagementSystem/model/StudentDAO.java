@@ -1,8 +1,8 @@
 package ManagementSystem.model;
 
 import util.DBUtil;
-import vo.StudentVO;
-import vo.PersonVO;
+import ManagementSystem.vo.StudentVO;
+import ManagementSystem.vo.PersonVO;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -289,17 +289,17 @@ public class StudentDAO implements Student {
      */
     public void totalSearch(int sortNum) {
         //일단 sort 메소드의 return 값이 list여야함(arraylist)
-        ArrayList<StudentVO> temp = sort(sortNum);
+        //ArrayList<StudentVO> temp = sort(sortNum);
 
         StringBuilder sb = new StringBuilder();
-        for (StudentVO studentVO : temp) {//나는 sno, name, grade만 출력하게끔
-            sb.append("sno = " +  studentVO.getSno() + " ");
-            sb.append("name = "+ studentVO.getName() + " ");
-            sb.append("grade = " +  studentVO.getGrade() + "\n");
-            //데이터 출력 포맷 설정해야함
-            System.out.println(sb.toString());
-            sb = new StringBuilder();
-        }
+//        for (StudentVO studentVO : temp) {//나는 sno, name, grade만 출력하게끔
+//            sb.append("sno = " +  studentVO.getSno() + " ");
+//            sb.append("name = "+ studentVO.getName() + " ");
+//            sb.append("grade = " +  studentVO.getGrade() + "\n");
+//            //데이터 출력 포맷 설정해야함
+//            System.out.println(sb.toString());
+//            sb = new StringBuilder();
+//        }
     }
 
 

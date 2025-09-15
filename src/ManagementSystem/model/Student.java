@@ -1,6 +1,6 @@
 package ManagementSystem.model;
 
-import vo.StudentVO;
+import ManagementSystem.vo.StudentVO;
 
 /**
  * {@code Student} 인터페이스는 학생 관리 기능을 정의하는 인터페이스입니다.

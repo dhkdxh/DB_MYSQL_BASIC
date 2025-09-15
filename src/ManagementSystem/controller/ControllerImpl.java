@@ -1,8 +1,8 @@
 package ManagementSystem.controller;
 
-import model.StudentDAO;
-import vo.PersonVO;
-import vo.StudentVO;
+import ManagementSystem.model.StudentDAO;
+import ManagementSystem.vo.PersonVO;
+import ManagementSystem.vo.StudentVO;
 
 
 /**

@@ -1,7 +1,7 @@
 package ManagementSystem.controller;
 
-import vo.PersonVO;
-import vo.StudentVO;
+import ManagementSystem.vo.PersonVO;
+import ManagementSystem.vo.StudentVO;
 
 /**
  * {@code Controller} 인터페이스는 특정 관리 모듈에서 사용되는 기본 동작을 정의합니다.

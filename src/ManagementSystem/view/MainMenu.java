@@ -2,7 +2,7 @@ package ManagementSystem.view;
 
 import ManagementSystem.controller.Controller;
 import ManagementSystem.controller.ControllerImpl;
-import vo.StudentVO;
+import ManagementSystem.vo.StudentVO;
 
 import java.util.Scanner;
 

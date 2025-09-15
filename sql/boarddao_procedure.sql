@@ -1,9 +1,18 @@
 use bookmarkedb;
 
+drop procedure if exists createBoard;
 delimiter ##
-create procedure createBoard(in title varchar(100), content text, writer varchar(50), date datetime)
+create procedure createBoard(in title varchar(100), in content text, in writer varchar(50))
 begin
-    insert into boardtable values (null, title, content, writer, date);
+    set @btitle = title;
+    set @bcontent = content;
+    set @bwriter  = writer;
+
+    set @query = 'insert into boardtable values (null, ?, ?, ?, now())';
+    prepare myQuery from @query;
+    execute myQuery using @btitle, @bcontent, @bwriter;
+
+    deallocate prepare myQuery;
 end ##
 delimiter ;
 

@@ -1,6 +1,6 @@
 package ManagementSystem.model;
 
-import vo.PersonVO;
+import ManagementSystem.vo.PersonVO;
 
 /**
  * {@code DBCommon} 인터페이스는 데이터베이스와 관련된 공통 작업을 정의합니다.
